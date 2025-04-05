@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0dff00;
+    color: #d90429;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+    background-color: #1e05ff;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1000px;
+}
+.container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: wordChange 0.5s infinite;
+}
+p {
+    font-size: 1.5em;
+    margin:auto;
+    width: 80%;
+    animation: wordChange2 0.5s infinite;
+}
+.btn {
+    background-color: #d90429;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    animation: gradientChange 0.5s infinite;
+}
+
+@keyframes gradientChange {
+    0% {
+    background-color: #e63946;
+    }
+    25% {
+    background-color: #f4a261;
+    }
+    50% {
+    background-color: #2a9d8f;
+    }
+    75% {
+    background-color: #264653;
+    }
+    100% {
+    background-color: #e63946;
+    }
+}
+@keyframes wordChange {
+    0% {
+    color: #e63946;
+    }
+    25% {
+    color: #f4a261;
+    }
+    50% {
+    color: #2a9d8f;
+    }
+    75% {
+    color: #0008ff;
+    }
+    80%{
+    color: #0bfe17;
+    }
+    100% {
+    color: #e63946;
+    }
+}
+@keyframes wordChange2 {
+    0% {
+        color: #2a9d8f;
+    }
+    25% {
+    color: #0bfe17;
+    }
+    50% {
+    
+    color: #e63946;
+    }
+    75% {
+    color: #0008ff;
+    }
+    80%{
+    color: #dafe0b;
+    }
+    100% {
+    color: #e63946;
+    }
+}
+.img2{
+    animation: flashyEffect 0.25s infinite;
+}
+
+@keyframes flashyEffect {
+    0% {
+    transform: scale(1);
+    filter: brightness(1);
+    }
+    50% {
+    transform: scale(1.1);
+    filter: brightness(8);
+    }
+    100% {
+    transform: scale(1);
+    filter: brightness(1);
+    }
+}
+.img{
+    animation: flashyEffect2 0.25s infinite;
+}
+
+@keyframes flashyEffect2 {
+    0% {
+    transform: scale(1);
+    filter: brightness(1);
+    }
+    50% {
+    transform: scale(1.1);
+    filter: brightness(2);
+    }
+    100% {
+    transform: scale(1);
+    filter: brightness(1);
+    }
+}
